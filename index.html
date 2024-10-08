@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Index</title>
+</head>
+<body>
+    <div class="main">
+        <!-- Моб - Хедер -->
+        <div class="header">
+            <div class="header__left">
+                <button class="header__btn header__btn-menu" id="header__btn-menu">
+                    <img src="images/image-btn-burger.svg" class="image-btn-burger" alt="image-header-btn-burger">
+                </button>
+            </div>
+            <div class="header__center">
+
+            </div>
+            <div class="header__right">
+                <button class="header__btn">
+                    <img src="images/image-btn-basket.svg" class="image-btn-basket" alt="image-header-btn-basket">
+                </button>
+                <button class="header__btn">
+                    <img src="images/image-btn-profile.svg" class="image-btn-profile" alt="image-header-profile">
+                </button>
+            </div>
+        </div>
+        <!-- Моб - Главный раздел -->
+        <div class="general">
+            <div class="general__image-box">
+                <img src="images/image-family-faces.svg" class="general__image-family" alt="general__image-family">
+            </div>
+            <h1 class="general__h1">Маркетплейс твоих<br>фотографий !</h1> 
+            <button class="general__btn-find-photo btn-light-to-dark color-gray" id="general__btn-find-photo">
+                <img src="images/magnifier.svg" class="image-general-btn-cam" alt="image-general-btn-cam">
+                <p>Найти <br>фото</p>
+            </button>
+           <!-- Моб - Главный блок - Модальное окно - Меню -->
+            <div class="general__modal-menu modal-style hidden" id="general__modal-menu">
+                <div class="general__modal-menu-box">
+                    <div class="general__modal-btn-close-box">
+                        <button class="general__modal-btn-close" id="menu__modal-btn-close">
+                            <img src="images/image-modal-btn-close.svg" alt="image-modal-btn-close">
+                        </button>
+                    </div>
+                    <div class="general__modal-logo">
+                        <img src="images/image-general-logo.svg" alt="image-general-logo">
+                    </div>
+                    <div class="general__modal-menu-list">
+                        <ul class="general__modal-list">
+                            <li><a href="#" class="general__menu-list-item color-gray">Найти себя</a></li>
+                            <li><a href="#" class="general__menu-list-item color-gray">О нас</a></li>
+                            <li><a href="#" class="general__menu-list-item color-gray">Вакансии</a></li>
+                            <li><a href="#" class="general__menu-list-item color-gray">Сотрудничество</a></li>
+                            <li><a href="#" class="general__menu-list-item color-gray">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <!-- Кнопка - Вход (Показать/Скрыть) -->
+                    <button class="general__modal-btn-login general__modal-btn color-gray" id="general__modal-btn-login">
+                        <img src="images/image-login.svg" alt="image-login"><p>Вход</p>
+                    </button>
+                    <!-- Кнопка - Выход (Показать/Скрыть) -->
+                    <button class="general__modal-btn-logout general__modal-btn color-gray hidden" id="general__modal-btn-logout">
+                        <img src="images/image-logout.svg" alt="image-login"><p>Выход</p>
+                    </button>
+                    <h4 class="general__modal-h4 color-gray">Социальные сети:</h4>
+                    <div class="general__modal-social-box">
+                        <button class="general__btn-social-login general__login-facebook" id="general__login-facebook">
+                            <img src="images/image-social-facebook.svg" alt="image-social-facebook">
+                        </button>
+
+                        <a href="http://yandex.ru" class="footer__social-link">
+                            <img src="images/image-social-vk.svg" alt="image-social-vk">
+                        </a>
+                        <a href="http://yandex.ru" class="footer__social-link">
+                            <img src="images/image-social-instagram.svg" alt="image-social-vk">
+                        </a>
+                        <a href="http://yandex.ru" class="footer__social-link">
+                            <img src="images/image-social-telegram.svg" alt="image-social-vk">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Моб - Главный блок - Модальное окно - Меню - Подтвердить выход -->
+            <div class="general__modal-exit-confirm modal-style hidden" id="general__modal-exit-confirm">
+                <div class="general__modal-menu-box">
+                    <div class="general__modal-btn-close-box">
+                        <button class="general__modal-btn-close" id="general__btn-confirm-close">
+                            <img src="images/image-modal-btn-close.svg" alt="image-modal-btn-close">
+                        </button>
+                    </div>
+                    <h4 class="general__modal-h4 general__modal-h4-confirm color-gray">Вы уверены что хотите выйти?</h4>
+                    <div class="general__btn-modal-box">
+                        <button class="general__btn-confirm-exit btn-modal btn-dark-to-light color-gray" id="general__btn-confirm-exit">
+                            <p>Выйти</p>
+                        </button>
+                    </div>
+                    <div class="general__btn-modal-box">
+                        <button class="general__btn-confirm-exit btn-modal btn-dark-to-light color-gray general__btn-confirm-stay" id="general__btn-confirm-stay">
+                            <p>Остаться</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Моб - Главный блок - Модальное окно - Авторизация -->
+            <div class="general__modal-authorization modal-style hidden" id="general__modal-authorization">
+                <div class="general__modal-authorization-box">
+                    <div class="general__modal-btn-close-box">
+                        <button class="general__modal-btn-close" id="general__btn-authorization-close">
+                            <img src="images/image-modal-btn-close.svg" alt="image-modal-btn-close">
+                        </button>
+                    </div>
+                    <h2 class="general__modal-h2">Авторизация</h2>
+                    <form name="authorization-bid" action="#" method="post" id="form-authorization-bid">
+                        <div class="authorization__modal-input-box">
+                            <label for="login" class="authorization__modal-label-login modal-label">E-mail \ Телефон</label><br>
+                            <input type="text" class="authorization__modal-input-login modal-input" id="authorization__modal-input-login" name="login" placeholder="imhere@gmail.com"><br>
+                        </div>
+                        <div class="authorization__wrong-data authorization__wrong-login" id="authorization__wrong-login">
+                            <p>Неверный логин.</p>
+                        </div>
+                        <div class="authorization__modal-input-box authorization__modal-input-box-password">
+                            <label for="password" class="authorization__modal-label-password modal-label">Пароль</label><br>
+                            <input type="password" class="authorization__modal-input-password modal-input" id="authorization__modal-input-password" name="password" placeholder="|"><br>
+                            <!-- Две кнопки показать/скрыть пароль -->
+                            <button class="authorization__btn-show-password show-dont-show-password" id="authorization__btn-show-password">
+                                <img src="images/image-show-password.svg" alt="image-show-password">
+                            </button>
+                            <button class="authorization__btn-dont-show-password show-dont-show-password hidden" id="authorization__btn-dont-show-password">
+                                <img src="images/image-dont-show-password.svg" alt="image-dont-show-password">
+                            </button>
+                        </div>
+                        <div class="authorization__wrong-data authorization__wrong-password" id="authorization__wrong-password">
+                            <p>Неверный пароль.</p>
+                        </div>
+                        <div class="authorization__modal-submit-box">
+                            <button type="submit" id="authorization__form-bid-btn-submit" class="authorization__modal-btn-submit btn-modal btn-dark-to-light">
+                                <p>Войти</p>
+                            </button>
+                        </div>
+                        <h2 class="general__modal-h2">Вход через:</h2>
+                        <div class="authorization__modal-social-box">
+                            <button class="authorization__btn-social-login general__login-yandex" id="authorization__login-yandex">
+                                <img src="images/image-social-yandex.svg" alt="image-social-yandex">
+                            </button>
+                            <button class="authorization__btn-social-login general__login-google" id="authorization__login-google">
+                                <img src="images/image-social-google.svg" alt="image-social-google">
+                            </button>
+                            <button class="authorization__btn-social-login general__login-vk" id="authorization__login-vk">
+                                <img src="images/image-social-vk-color.svg" alt="image-social-vk">
+                            </button>
+                            <button class="authorization__btn-social-login general__login-ok" id="authorization__login-ok">
+                                <img src="images/image-social-ok.svg" alt="image-social-ok">
+                            </button>
+                        </div>
+                        <div class="authorization__get-registration-box">
+                            <a href="#" class="authorization__link-get-registration" id="authorization__link-get-registration">
+                                <p>Нет аккаунта?</p>
+                                <img src="images/image-arrow.svg" alt="image-arrow">
+                            </a>
+                        </div>                    
+                    </form>
+                </div>
+            </div>
+            <!-- Моб - Главный блок - Модальное окно - Регистрация -->
+            <div class="general__modal-registration modal-style hidden" id="general__modal-registration">
+                <div class="general__modal-registration-box">
+                    <div class="general__modal-btn-close-box">
+                        <button class="general__modal-btn-close" id="general__btn-registration-close">
+                            <img src="images/image-modal-btn-close.svg" alt="image-modal-btn-close">
+                        </button>
+                    </div>
+                    <h2 class="general__modal-h2">Регистрация</h2>
+                    <form name="registration-bid" action="#" method="post" id="form-registration-bid">
+                        <div class="registration__modal-input-box">
+                            <label for="login" class="registration__modal-label-name modal-label">E-mail \ Телефон</label><br>
+                            <input type="text" class="registration__modal-input-login modal-input" id="registration__modal-input-login" name="login" placeholder="imhere@gmail.com"><br>
+                        </div>
+                        <div class="registration__wrong-data registration__wrong-login" id="registration__wrong-login">
+                            <p>Недопустимый логин.</p>
+                        </div>
+                        <div class="registration__modal-input-box registration__modal-input-box-password">
+                            <label for="password" class="registration__modal-label-password modal-label">Пароль</label><br>
+                            <input type="password" class="registration__modal-input-password modal-input" id="registration__modal-input-password" name="password" placeholder="|"><br>
+                            <button class="registration__btn-show-password show-dont-show-password" id="registration__btn-show-password">
+                                <img src="images/image-show-password.svg" alt="image-show-password">
+                            </button>
+                            <button class="registration__btn-dont-show-password show-dont-show-password hidden" id="registration__btn-dont-show-password">
+                                <img src="images/image-dont-show-password.svg" alt="image-dont-show-password">
+                            </button>
+                        </div>
+                        <div class="registration__wrong-data registration__wrong-password" id="registration__wrong-password">
+                            <p>Недопустимый пароль.</p>
+                        </div>
+                        <div class="registration__modal-input-box registration__modal-input-box-password2">
+                            <label for="password2" class="registration__modal-label-password2 modal-label">Повторить пароль</label><br>
+                            <input type="password" class="registration__modal-input-password2 modal-input" id="registration__modal-input-password2" name="password2" placeholder="|"><br>
+                            <button class="registration__btn-show-password2 show-dont-show-password hidden" id="registration__btn-show-password2">
+                                <img src="images/image-show-password.svg" alt="image-show-password">
+                            </button>
+                            <button class="registration__btn-dont-show-password2 show-dont-show-password" id="registration__btn-dont-show-password2">
+                                <img src="images/image-dont-show-password.svg" alt="image-dont-show-password2">
+                            </button>
+                        </div>
+                        <div class="registration__wrong-data registration__wrong-password2" id="registration__wrong-password2">
+                            <p>Пароли не совпадают.</p>
+                        </div>
+                        <div class="registration__modal-agreed-box">
+                            <input type="checkbox" id="registration__modal-checkbox-agreed" name="agreed" value="agree">
+                            <label for="agreed" class="modal-label">Я согласен с условиями</label>
+                        </div>
+                        <div class="registration__modal-submit-box">
+                            <button type="submit" id="registration__form-bid-btn-submit" class="registration__modal-btn-submit btn-modal btn-dark-to-light">
+                                <p>Зарегистрироваться</p>
+                            </button>
+                        </div>
+                        <h2 class="general__modal-h2">Вход через:</h2>
+                        <div class="registration__modal-social-box">
+                            <button class="registration__btn-social-login general__login-yandex" id="registration__login-yandex">
+                                <img src="images/image-social-yandex.svg" alt="image-social-yandex">
+                            </button>
+                            <button class="registration__btn-social-login general__login-google" id="registration__login-google">
+                                <img src="images/image-social-google.svg" alt="image-social-google">
+                            </button>
+                            <button class="registration__btn-social-login general__login-vk" id="registration__login-vk">
+                                <img src="images/image-social-vk-color.svg" alt="image-social-vk">
+                            </button>
+                            <button class="registration__btn-social-login general__login-ok" id="registration__login-ok">
+                                <img src="images/image-social-ok.svg" alt="image-social-ok">
+                            </button>
+                        </div>
+                        <div class="registration__get-authorization-box">
+                            <a href="#" class="registration__link-get-authorization" id="registration__link-get-authorization">
+                                <p>Есть аккаунт?</p>
+                                <img src="images/image-arrow.svg" alt="image-arrow">
+                            </a>
+                        </div> 
+                    </form>
+                </div>
+            </div>
+        </div>
+        <hr class="hr-1">
+        <!-- Моб - О нас -->
+        <div class="about-us container">
+            <h2 class="about-us__h2 mobile-h2 color-gray">
+                О нас
+            </h2>
+            <div class="about-us__photo mobile-photo-box">
+                <img src="/images/image-team-of-photographers.png" alt="image-team-of-photographers">
+            </div>
+            <div class="about-us__text-box mobile-text-box color-gray">
+                <p class="about-us__text mobile-text">
+                    Наша команда фотографов - истинные мастера в захватывании моментов. Страсть к искусству, креативный подход и профессионализм помогут оживить ваше событие и сохранить ваши незабываемые моменты.
+                </p>
+            </div>
+        </div>
+        <hr class="hr-1">
+        <!-- Моб - Вакансии -->
+        <div class="job container">
+            <h2 class="job__h2 mobile-h2 color-gray">
+                Вакансии
+            </h2>
+            <div class="job__photo mobile-photo-box">
+                <img src="/images/image-photographer-working-1.png" alt="image-photographer-working-1">
+            </div>
+            <div class="job__text-box mobile-text-box color-gray">
+                <p class="job__text mobile-text">
+                    <span>Заработок от 70 000р. в месяц,</span><br>узнай больше заполнив анкету.
+                </p>
+            </div>
+            <button class="job__btn-get-job btn-light-to-dark btn-slim color-gray" id="job__btn-get-job">
+                <p>Заполнить анкету</p>
+            </button>
+                    </div>
+        <hr class="hr-1">
+        <!-- Сотрудничество -->
+        <div class="cooperation container">
+            <h2 class="cooperation__h2 mobile-h2 color-gray">
+                Сотрудничество
+            </h2>
+            <div class="cooperation__photo mobile-photo-box">
+                <img src="/images/image-cooperation-1.png" alt="image-cooperation-1">
+            </div>
+            <div class="cooperation__text-box mobile-text-box color-gray">
+                <p class="cooperation__text mobile-text">
+                    Взаимовыгодное сотрудничество.
+                </p>
+            </div>
+            <button class="cooperation__btn-get-cooperation btn-light-to-dark btn-slim color-gray" id="cooperation__btn-get-cooperation">
+                <p>Оставить заявку</p>
+            </button>
+            <!-- Моб - Сотрудничество - Модальное окно - Заявка-->
+            <div class="cooperation__modal modal-style hidden" id="cooperation__modal">
+                <div class="cooperation__modal-menu-box">
+                    <div class="cooperation__modal-btn-close-box">
+                        <button class="cooperation__modal-btn-close" id="cooperation__modal-btn-close">
+                            <img src="images/image-modal-btn-close.svg" alt="image-modal-btn-close">
+                        </button>
+                    </div>
+                    <form name="cooperation-bid" action="#" method="post" id="form-cooperation-bid">
+                        <div class="cooperation__modal-input-box modal-input-box">
+                            <label for="name" class="cooperation__modal-label-name modal-label">Имя Фамилия</label><br>
+                            <input type="text" name="name" class="cooperation__modal-input-name modal-input" id="cooperation__modal-input-name" placeholder="Иван Иванов"><br>
+                        </div>
+                        <div class="cooperation__wrong-data cooperation__wrong-name" id="cooperation__wrong-name">
+                            <p>Поле заполнено некорректно.</p>
+                        </div>
+                        <div class="cooperation__modal-input-box modal-input-box">
+                            <label for="phone" class="cooperation__modal-label-phone modal-label">Телефон</label><br>
+                            <input type="tel" name="phone" class="cooperation__modal-input-phone modal-input" id="cooperation__modal-input-phone" placeholder="(+7) |"><br>
+                        </div>
+                        <div class="cooperation__wrong-data cooperation__wrong-tel" id="cooperation__wrong-tel">
+                            <p>Пример: +79998887766</p>
+                        </div>
+                        <div class="cooperation__modal-submit-box">
+                            <button type="submit" id="cooperation__form-bid-btn-submit" class="cooperation__modal-btn-submit btn-modal btn-dark-to-light">
+                                <p>Отправить заявку</p>
+                            </button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+            <!-- Моб - Сотрудничество - Модальное окно - Заявка - Успешно отправленно -->
+            <div class="cooperation__modal-info modal-style hidden" id="cooperation__modal-info">
+                <div class="cooperation__modal-menu-box">
+                    <div class="cooperation__modal-btn-close-box">
+                        <button class="cooperation__modal-btn-close" id="cooperation__modal-btn-info-close">
+                            <img src="images/image-modal-btn-close.svg" alt="image-modal-btn-close">
+                        </button>
+                    </div>
+                    <p class="cooperation__modal-info-text">Ваша заявка успешно отправлена.</p>
+                </div>
+            </div>
+        </div>
+        <hr class="hr-1">
+        <div class="footer container">
+            <div class="footer__contacts-box">
+                <h4 class="footer__h4 color-gray">Контакты:</h4>
+                <div class="footer__phones">
+                    <div class="footer__phone-1">
+                        <a href="tel:+79998887766" class="footer__phone-item">
+                            <img src="images/image-link-phone.svg" alt="image-link-phone">
+                            <p class="mobile-text color-gray">+79998887766</p>
+                        </a>
+                    </div>
+                    <div class="footer__phone-2"></div>
+                        <a href="tel:+79998887766" class="footer__phone-item">
+                            <img src="images/image-link-phone.svg" alt="image-link-phone2">
+                            <p class="mobile-text color-gray">+79998887766</p>
+                        </a>
+                    </div>
+                </div>
+                <h4 class="footer__h4 color-gray">Социальные сети:</h4>
+                <div class="footer__social-links-box">
+                    <a href="http://yandex.ru" class="footer__social-link">
+                        <img src="images/image-social-facebook.svg" alt="image-social-vk">
+                    </a>
+                    <a href="http://yandex.ru" class="footer__social-link">
+                        <img src="images/image-social-vk.svg" alt="image-social-vk">
+                    </a>
+                    <a href="http://yandex.ru" class="footer__social-link">
+                        <img src="images/image-social-instagram.svg" alt="image-social-vk">
+                    </a>
+                    <a href="http://yandex.ru" class="footer__social-link">
+                        <img src="images/image-social-telegram.svg" alt="image-social-vk">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

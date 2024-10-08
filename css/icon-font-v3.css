@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'iconfont_v3';
+  src:  url('../fonts/iconfont_v3.eot?ebugs0');
+  src:  url('../fonts/iconfont_v3.eot?ebugs0#iefix') format('embedded-opentype'),
+    url('../fonts/iconfont_v3.ttf?ebugs0') format('truetype'),
+    url('../fonts/iconfont_v3.woff?ebugs0') format('woff'),
+    url('../fonts/iconfont_v3.svg?ebugs0#iconfont_v3') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'iconfont_v3' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-del:before {
+  content: "\e900";
+  color: #45565c;
+}
+.icon-download:before {
+  content: "\e901";
+  color: #45565c;
+}
+.icon-edit:before {
+  content: "\e902";
+  color: #45565c;
+}
+.icon-get-archive:before {
+  content: "\e903";
+  color: #45565c;
+}
+.icon-web-link:before {
+  content: "\e905";
+  color: #45565c;
+}
+.icon-image-admin-recover:before {
+  content: "\e904";
+  color: #45565c;
+}
+.icon-close_v2:before {
+  content: "\e906";
+}

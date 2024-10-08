@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/icon-font-v3.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Admin-page</title>
+</head>
+<body>
+    <div class="admin-main">
+        <!-- Админка - Хедер -->
+        <div class="admin-main__header">
+            <div class="admin-main__header-top">
+                <div class="admin-main__header-top-logo-box">
+                    <p>Logo</p>
+                </div>
+                <div class="admin-main__header-top-right-box">
+                    <h1 class="admin-main__header-top-h1">Рабочий кабинет</h1>
+                    <div class="admin-main__header-top-text">
+                        <p>ТЦ Барвиха</p>
+                        <p class="admin-main__header-top-text-city">г. Москва</p>
+                    </div>
+                </div>
+            </div>
+            <div class="admin-main__header-sections">
+                <div class="admin-main__header-sections-item">
+                    <button class="admin-main__btn-projects admin-main__btn-sections-style" id="admin-main__btn-projects">
+                        <p>Проекты</p>
+                    </button>
+                    <hr class="admin-main__btn-projects-hr" id="admin-main__btn-projects-hr">
+                </div>
+                <div class="admin-main__header-sections-item">
+                    <button class="admin-main__btn-baskets admin-main__btn-sections-style" id="admin-main__btn-baskets">
+                        <p>Корзины</p>
+                    </button>
+                    <hr class="admin-main__btn-projects-hr hidden" id="admin-main__btn-baskets-hr">
+                </div>
+                <div class="admin-main__header-sections-item">
+                    <button class="admin-main__btn-reports admin-main__btn-sections-style" id="admin-main__btn-reports">
+                        <p>Отчеты</p>
+                    </button>
+                    <hr class="admin-main__btn-projects-hr hidden" id="admin-main__btn-reports-hr">
+                </div>
+                <div class="admin-main__header-sections-item">
+                    <button class="admin-main__btn-statistics admin-main__btn-sections-style" id="admin-main__btn-statistics">
+                        <p>Статистика</p>
+                    </button>
+                    <hr class="admin-main__btn-projects-hr" id="admin-main__btn-statistics-hr">
+                </div>
+            </div>
+        </div>
+        <hr class="admin-main__header-hr admin-main__hr">
+        <!-- Раздел - Проекты -->
+        <div class="admin-main__projects">
+            <div class="admin-main__projects-left">
+                <div class="admin-main__actual-projects-box">
+                    <div class="admin-main__actual-item">
+                        <!-- Меню над проектом -->
+                        <div class="admin-main__item-menu">
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-link" id="admin-main__item-menu-btn-actual-link-1">
+                                    <!-- <img src="images/image-admin-web-link.svg" alt="image-admin-web-link"> -->
+                                    <p class="icon-web-link"></p>
+                                </button>
+                            </div>
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-edit" id="admin-main__item-menu-btn-actual-edit-1">
+                                    <!-- <img src="images/image-admin-edit.svg" alt="image-admin-edit"> -->
+                                    <p class="icon-edit"></p>
+                                </button>
+                            </div>
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-archive" id="admin-main__item-menu-btn-actual-archive-1">
+                                    <!-- <img src="images/image-admin-get-archive.svg" alt="image-admin-get-archive"> -->
+                                    <p class="icon-get-archive"></p>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="admin-main__item-text-box">
+                            <button class="admin-main__btn-project admin-main__btn-project-1" id="admin-main__actual-project-1">
+                                <h3 class="admin-main__item-name">
+                                    БАРВИХА январь 2024
+                                </h3>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="admin-main__actual-item">
+                        <div class="admin-main__item-menu">
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-link" id="admin-main__item-menu-btn-actual-link-2">
+                                    <p class="icon-web-link"></p>
+                                </button>
+                            </div>
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-edit" id="admin-main__item-menu-btn-actual-edit-2">
+                                    <p class="icon-edit"></p>
+                                </button>
+                            </div>
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-archive" id="admin-main__item-menu-btn-actual-archive-2">
+                                    <p class="icon-get-archive"></p>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="admin-main__item-text-box">
+                            <button class="admin-main__btn-project admin-main__btn-project-2" id="admin-main__actual-project-2">
+                                <h3 class="admin-main__item-name">
+                                    БАРВИХА февраль 2024
+                                </h3>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="admin-main__actual-item">
+                        <div class="admin-main__item-menu">
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-link" id="admin-main__item-menu-btn-actual-link-3">
+                                    <p class="icon-web-link"></p>
+                                </button>
+                            </div>
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-edit" id="admin-main__item-menu-btn-actual-edit-3">
+                                    <p class="icon-edit"></p>
+                                </button>
+                            </div>
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-archive" id="admin-main__item-menu-btn-actual-archive-3">
+                                    <p class="icon-get-archive"></p>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="admin-main__item-text-box">
+                            <button class="admin-main__btn-project admin-main__btn-project-3" id="admin-main__actual-project-3">
+                                <h3 class="admin-main__item-name">
+                                    БАРВИХА март 2024
+                                </h3>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="admin-main__actual-item">
+                        <div class="admin-main__item-menu hidden">
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-link" id="admin-main__item-menu-btn-actual-link-4">
+                                    <p class="icon-web-link"></p>
+                                </button>
+                            </div>
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-edit" id="admin-main__item-menu-btn-actual-edit-4">
+                                    <p class="icon-edit"></p>
+                                </button>
+                            </div>
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-archive" id="admin-main__item-menu-btn-actual-archive-4">
+                                    <p class="icon-get-archive"></p>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="admin-main__item-text-box">
+                            <button class="admin-main__btn-project admin-main__btn-project-4" id="admin-main__actual-project-4">
+                                <h3 class="admin-main__item-name">
+                                    БАРВИХА апрель 2024
+                                </h3>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="admin-main__actual-item">
+                        <div class="admin-main__item-menu hidden">
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-link" id="admin-main__item-menu-btn-actual-link-5">
+                                    <p class="icon-web-link"></p>
+                                </button>
+                            </div>
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-edit" id="admin-main__item-menu-btn-actual-edit-5">
+                                    <p class="icon-edit"></p>
+                                </button>
+                            </div>
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-archive" id="admin-main__item-menu-btn-actual-archive-5">
+                                    <p class="icon-get-archive"></p>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="admin-main__item-text-box">
+                            <button class="admin-main__btn-project admin-main__btn-project-5" id="admin-main__actual-project-5">
+                                <h3 class="admin-main__item-name">
+                                    БАРВИХА май 2024
+                                </h3>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="admin-main__actual-item">
+                        <div class="admin-main__item-menu hidden">
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-link" id="admin-main__item-menu-btn-actual-link-6">
+                                    <p class="icon-web-link"></p>
+                                </button>
+                            </div>
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-edit" id="admin-main__item-menu-btn-actual-edit-6">
+                                    <p class="icon-edit"></p>
+                                </button>
+                            </div>
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-archive" id="admin-main__item-menu-btn-actual-archive-6">
+                                    <p class="icon-get-archive"></p>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="admin-main__item-text-box">
+                            <button class="admin-main__btn-project admin-main__btn-project-6" id="admin-main__actual-project-6">
+                                <h3 class="admin-main__item-name">
+                                    БАРВИХА июнь 2024
+                                </h3>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="admin-main__actual-item">
+                        <div class="admin-main__item-menu hidden">
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-link" id="admin-main__item-menu-btn-actual-link-7">
+                                    <p class="icon-web-link"></p>
+                                </button>
+                            </div>
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-edit" id="admin-main__item-menu-btn-actual-edit-7">
+                                    <p class="icon-edit"></p>
+                                </button>
+                            </div>
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-archive" id="admin-main__item-menu-btn-actual-archive-7">
+                                    <p class="icon-get-archive"></p>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="admin-main__item-text-box">
+                            <button class="admin-main__btn-project admin-main__btn-project-7" id="admin-main__actual-project-7">
+                                <h3 class="admin-main__item-name">
+                                    БАРВИХА июль 2024
+                                </h3>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="admin-main__actual-item">
+                        <div class="admin-main__item-menu hidden">
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-link" id="admin-main__item-menu-btn-actual-link-8">
+                                    <p class="icon-web-link"></p>
+                                </button>
+                            </div>
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-edit" id="admin-main__item-menu-btn-actual-edit-8">
+                                    <p class="icon-edit"></p>
+                                </button>
+                            </div>
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-archive" id="admin-main__item-menu-btn-actual-archive-8">
+                                    <p class="icon-get-archive"></p>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="admin-main__item-text-box">
+                            <button class="admin-main__btn-project admin-main__btn-project-8" id="admin-main__actual-project-8">
+                                <h3 class="admin-main__item-name">
+                                    БАРВИХА август 2024
+                                </h3>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="admin-main__actual-item">
+                        <div class="admin-main__item-menu hidden">
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-link" id="admin-main__item-menu-btn-actual-link-9">
+                                    <p class="icon-web-link"></p>
+                                </button>
+                            </div>
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-edit" id="admin-main__item-menu-btn-actual-edit-9">
+                                    <p class="icon-edit"></p>
+                                </button>
+                            </div>
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-archive" id="admin-main__item-menu-btn-actual-archive-9">
+                                    <p class="icon-get-archive"></p>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="admin-main__item-text-box">
+                            <button class="admin-main__btn-project admin-main__btn-project-9" id="admin-main__actual-project-9">
+                                <h3 class="admin-main__item-name">
+                                    БАРВИХА сентябрь 2024
+                                </h3>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="admin-main__actual-item">
+                        <div class="admin-main__item-menu hidden">
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-link" id="admin-main__item-menu-btn-actual-link-10">
+                                    <p class="icon-web-link"></p>
+                                </button>
+                            </div>
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-edit" id="admin-main__item-menu-btn-actual-edit-10">
+                                    <p class="icon-edit"></p>
+                                </button>
+                            </div>
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-archive" id="admin-main__item-menu-btn-actual-archive-10">
+                                    <p class="icon-get-archive"></p>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="admin-main__item-text-box">
+                            <button class="admin-main__btn-project admin-main__btn-project-10" id="admin-main__actual-project-10">
+                                <h3 class="admin-main__item-name">
+                                    БАРВИХА октябрь 2024
+                                </h3>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="admin-main__actual-item">
+                        <div class="admin-main__item-menu">
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-link" id="admin-main__item-menu-btn-actual-link-11">
+                                    <p class="icon-web-link"></p>
+                                </button>
+                            </div>
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-edit" id="admin-main__item-menu-btn-actual-edit-11">
+                                    <p class="icon-edit"></p>
+                                </button>
+                            </div>
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-archive" id="admin-main__item-menu-btn-actual-archive-11">
+                                    <p class="icon-get-archive"></p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="admin-main__item-text-box">
+                            <button class="admin-main__btn-project admin-main__btn-project-11" id="admin-main__actual-project-11">
+                                <h3 class="admin-main__item-name">
+                                    БАРВИХА ноябрь 2024
+                                </h3>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="admin-main__actual-item admin-main__actual-item-new">
+                        <div class="admin-main__item-text-box">
+                            <button class="admin-main__btn-project admin-main__btn-project-new" id="admin-main__btn-actual-project-new">
+                                <div class="admin-main__image-box">
+                                    <img src="images/image-plus.svg" alt="image-plus">
+                                </div>
+                                <h3 class="admin-main__item-name admin-main__item-name-new">
+                                    Добавить проект
+                                </h3>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Чекбокс - Архивные -->
+                <div class="admin-main__form-archive-box">
+                    <form name="admin-main__form-archive" action="#" class="admin-main__form-archive" method="post" id="admin-main__form-archive">
+                        <input type="checkbox" id="admin-main__form-archive-checkbox" name="add-archive" value="agree">
+                        <label for="add-archive" class="modal-label">Архивные</label>
+                    </form>
+                </div>
+                <!-- Архивные проекты -->
+                <div class="admin-main__archive-projects-box">
+                    <div class="admin-main__archive-item">
+                        <div class="admin-main__item-menu admin-main__item-archive-menu">
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-link" id="admin-main__item-menu-btn-archive-link-1">
+                                    <p class="icon-web-link"></p>
+                                </button>
+                            </div>
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-recover" id="admin-main__item-menu-btn-archive-recover-1">
+                                    <!-- <img src="images/image-admin-recover.svg" alt="image-admin-recover"> -->
+                                    <p class="icon-image-admin-recover"></p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="admin-main__item-text-box admin-main__item-archive-text-box">
+                            <button class="admin-main__btn-project admin-main__btn-project-1" id="admin-main__archive-project-1">
+                                <h3 class="admin-main__item-name">
+                                    БАРВИХА январь 2023
+                                </h3>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="admin-main__archive-item">
+                        <div class="admin-main__item-menu admin-main__item-archive-menu">
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-link" id="admin-main__item-menu-btn-archive-link-2">
+                                    <p class="icon-web-link"></p>
+                                </button>
+                            </div>
+                            <div class="admin-main__item-menu-part">
+                                <button class="admin-main__item-menu-btn admin-main__item-menu-btn-recover" id="admin-main__item-menu-btn-archive-recover-2">
+                                    <p class="icon-image-admin-recover"></p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="admin-main__item-text-box admin-main__item-archive-text-box">
+                            <button class="admin-main__btn-project admin-main__btn-project-1" id="admin-main__archive-project-2">
+                                <h3 class="admin-main__item-name">
+                                    БАРВИХА февраль 2023
+                                </h3>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="admin-main__projects-right">
+                <!-- Админка - Проекты - Модалка - Создать Новый проект -->
+                <div class="admin-main__modal-new-project admin-main__modal-style hidden">
+                    <form name="admin-main__modal-new-project-form" action="#" method="post" id="form-admin-main__new-project">
+                        <div class="admin-main__new-project-input-box">
+                            <label for="name" class="admin-main__new-project-modal-label-name modal-label">Название</label><br>
+                            <input type="text" class="admin-main__new-project-modal-input-name modal-input admin-main__modal-input" id="admin-main__new-project-modal-input-name" name="name" placeholder="|"><br>
+                        </div>
+                        <div class="admin-main__new-project-wrong-data hidden" id="admin-main__new-project-wrong-data-name">
+                            <p>Недопустимое название</p>
+                        </div>
+                        <div class="admin-main__new-project-modal-submit-box">
+                            <button type="submit" id="admin-main__new-project-btn-submit" class="admin-main__new-project-btn-submit admin-main__btn-modal btn-dark-to-light">
+                                <p>Добавить проект</p>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!-- Админка - Проекты - Модалка - Изменить проект -->
+                <div class="admin-main__modal-edit-project admin-main__modal-style hidden">
+                    <form name="admin-main__modal-edit-project-form" action="#" method="post" id="form-admin-main__edit-project">
+                        <div class="admin-main__edit-project-input-box">
+                            <label for="editname" class="admin-main__new-project-modal-label-name modal-label">Название</label><br>
+                            <input type="text" class="admin-main__edit-project-modal-input-name modal-input admin-main__modal-input" id="admin-main__edit-project-modal-input-name" name="editname" placeholder="|"><br>
+                        </div>
+                        <div class="admin-main__edit-project-wrong-data hidden" id="admin-main__edit-project-wrong-data-name">
+                            <p>Недопустимое название</p>
+                        </div>
+                        <div class="admin-main__edit-project-modal-submit-box">
+                            <button type="submit" id="admin-main__edit-project-btn-submit" class="admin-main__edit-project-btn-submit admin-main__btn-modal btn-dark-to-light">
+                                <p>Сохранить проект</p>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <hr class="admin-main__projects-hr admin-main__hr">
+        <!-- Админка - Вкладка проекты - Раздел - Альбомы -->
+        <div class="admin-main__albums">
+            <!-- Админка - Вкладка проекты - Раздел - Альбомы - Левая часть -->
+            <div class="admin-main__albums-left">
+                <div class="admin-main__albums-left-top">
+                    <div class="admin-main__albums-title-box">
+                        <h3 class="admin-main__albums-title admin-main__h3">Проект - </h3>
+                        <h3 class="admin-main__albums-name-project admin-main__h3"> Барвиха январь 2024</h3>
+                    </div>
+                    <div class="admin-main__albums-btn-close">
+                        <img src="images/image-modal-btn-close.svg" alt="image-modal-btn-close">
+                    </div>
+                </div>
+                <div class="admin-main__albums-box">
+                    <!-- Админка - Вкладка проекты - Раздел - Альбомы - Левая часть - Первый альбом -->
+                    <div class="admin-main__albums-box-item">
+                        <div class="admin-main__album-item">
+                            <div class="admin-main__item-menu admin-main__album-item-menu">
+                                <div class="admin-main__item-menu-part">
+                                    <button class="admin-main__item-menu-btn admin-main__item-menu-btn-link" id="admin-main__album-btn-link-1">
+                                        <p class="icon-web-link"></p>
+                                    </button>
+                                </div>
+                                <div class="admin-main__item-menu-part">
+                                    <button class="admin-main__item-menu-btn admin-main__item-menu-btn-edit" id="admin-main__album-btn-edit-1">
+                                        <p class="icon-edit"></p>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="admin-main__album-fotos-box">
+                                <button class="admin-main__btn-album admin-main__btn-album-1" id="admin-main__btn-album-1">
+                                    <div class="admin-main__fotos-mini">
+                                        <div class="admin-main__fotos-mini-item">
+                                            <img src="images/image-album-photo-mini-1_cut.png" alt="image-album-photo-mini">
+                                        </div>
+                                        <div class="admin-main__fotos-mini-item">
+                                            <img src="images/image-album-photo-mini-1_cut.png" alt="image-album-photo-mini">
+                                        </div>
+                                        <div class="admin-main__fotos-mini-item">
+                                            <img src="images/image-album-photo-mini-1_cut.png" alt="image-album-photo-mini">
+                                        </div>
+                                        <div class="admin-main__fotos-mini-item">
+                                            <img src="images/image-album-photo-mini-1_cut.png" alt="image-album-photo-mini">
+                                        </div>
+                                    </div>
+                                    <div class="admin-main__album-text-box">
+                                        <div class="admin-main__album-text-left">
+                                            <p class="admin-main__album-text">Альбом</p>
+                                            <p class="admin-main__album-number admin-main__album-text" id="admin-main__number-album-1">1</p>
+                                        </div>
+                                        <p class="admin-main__album-data admin-main__album-text" id="admin-main__data-album-1">01.01.2024</p>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="admin-main__albums-box-item">
+                        <div class="admin-main__album-item">
+                            <div class="admin-main__item-menu admin-main__album-item-menu">
+                                <div class="admin-main__item-menu-part">
+                                    <button class="admin-main__item-menu-btn admin-main__item-menu-btn-link" id="admin-main__album-btn-link-2">
+                                        <p class="icon-web-link"></p>
+                                    </button>
+                                </div>
+                                <div class="admin-main__item-menu-part">
+                                    <button class="admin-main__item-menu-btn admin-main__item-menu-btn-edit" id="admin-main__album-btn-edit-2">
+                                        <p class="icon-edit"></p>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="admin-main__album-fotos-box">
+                                <button class="admin-main__btn-album admin-main__btn-album-2" id="admin-main__btn-album-2">
+                                    <div class="admin-main__fotos-mini">
+                                        <div class="admin-main__fotos-mini-item">
+                                            <img src="images/image-album-photo-mini-1_cut.png" alt="image-album-photo-mini">
+                                        </div>
+                                        <div class="admin-main__fotos-mini-item">
+                                            <img src="images/image-album-photo-mini-1_cut.png" alt="image-album-photo-mini">
+                                        </div>
+                                        <div class="admin-main__fotos-mini-item">
+                                            <img src="images/image-album-photo-mini-1_cut.png" alt="image-album-photo-mini">
+                                        </div>
+                                        <div class="admin-main__fotos-mini-item">
+                                            <img src="images/image-album-photo-mini-1_cut.png" alt="image-album-photo-mini">
+                                        </div>
+                                    </div>
+                                    <div class="admin-main__album-text-box">
+                                        <div class="admin-main__album-text-left">
+                                            <p class="admin-main__album-text">Альбом</p>
+                                            <p class="admin-main__album-number admin-main__album-text" id="admin-main__number-album-2">2</p>
+                                        </div>
+                                        <p class="admin-main__album-data admin-main__album-text" id="admin-main__data-album-2">01.02.2024</p>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="admin-main__albums-box-item">
+                        <div class="admin-main__album-item">
+                            <div class="admin-main__item-menu admin-main__album-item-menu">
+                                <div class="admin-main__item-menu-part">
+                                    <button class="admin-main__item-menu-btn admin-main__item-menu-btn-link" id="admin-main__album-btn-link-3">
+                                        <p class="icon-web-link"></p>
+                                    </button>
+                                </div>
+                                <div class="admin-main__item-menu-part">
+                                    <button class="admin-main__item-menu-btn admin-main__item-menu-btn-edit" id="admin-main__album-btn-edit-3">
+                                        <p class="icon-edit"></p>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="admin-main__album-fotos-box">
+                                <button class="admin-main__btn-album admin-main__btn-album-3" id="admin-main__btn-album-3">
+                                    <div class="admin-main__fotos-mini">
+                                        <div class="admin-main__fotos-mini-item">
+                                            <img src="images/image-album-photo-mini-1_cut.png" alt="image-album-photo-mini">
+                                        </div>
+                                        <div class="admin-main__fotos-mini-item">
+                                            <img src="images/image-album-photo-mini-1_cut.png" alt="image-album-photo-mini">
+                                        </div>
+                                        <div class="admin-main__fotos-mini-item">
+                                            <img src="images/image-album-photo-mini-1_cut.png" alt="image-album-photo-mini">
+                                        </div>
+                                        <div class="admin-main__fotos-mini-item">
+                                            <img src="images/image-album-photo-mini-1_cut.png" alt="image-album-photo-mini">
+                                        </div>
+                                    </div>
+                                    <div class="admin-main__album-text-box">
+                                        <div class="admin-main__album-text-left">
+                                            <p class="admin-main__album-text">Альбом</p>
+                                            <p class="admin-main__album-number admin-main__album-text" id="admin-main__number-album-3">3</p>
+                                        </div>
+                                        <p class="admin-main__album-data admin-main__album-text" id="admin-main__data-album-3">01.03.2024</p>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="admin-main__albums-box-item">
+                        <div class="admin-main__album-item">
+                            <div class="admin-main__item-menu admin-main__album-item-menu">
+                                <div class="admin-main__item-menu-part">
+                                    <button class="admin-main__item-menu-btn admin-main__item-menu-btn-link" id="admin-main__album-btn-link-4">
+                                        <p class="icon-web-link"></p>
+                                    </button>
+                                </div>
+                                <div class="admin-main__item-menu-part">
+                                    <button class="admin-main__item-menu-btn admin-main__item-menu-btn-edit" id="admin-main__album-btn-edit-4">
+                                        <p class="icon-edit"></p>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="admin-main__album-fotos-box">
+                                <button class="admin-main__btn-album admin-main__btn-album-4" id="admin-main__btn-album-4">
+                                    <div class="admin-main__fotos-mini">
+                                        <div class="admin-main__fotos-mini-item">
+                                            <img src="images/image-album-photo-mini-1_cut.png" alt="image-album-photo-mini">
+                                        </div>
+                                        <div class="admin-main__fotos-mini-item">
+                                            <img src="images/image-album-photo-mini-1_cut.png" alt="image-album-photo-mini">
+                                        </div>
+                                        <div class="admin-main__fotos-mini-item">
+                                            <img src="images/image-album-photo-mini-1_cut.png" alt="image-album-photo-mini">
+                                        </div>
+                                        <div class="admin-main__fotos-mini-item">
+                                            <img src="images/image-album-photo-mini-1_cut.png" alt="image-album-photo-mini">
+                                        </div>
+                                    </div>
+                                    <div class="admin-main__album-text-box">
+                                        <div class="admin-main__album-text-left">
+                                            <p class="admin-main__album-text">Альбом</p>
+                                            <p class="admin-main__album-number admin-main__album-text" id="admin-main__number-album-4">4</p>
+                                        </div>
+                                        <p class="admin-main__album-data admin-main__album-text" id="admin-main__data-album-3">01.04.2024</p>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="admin-main__albums-box-item">
+                        <div class="admin-main__album-item">
+                            <div class="admin-main__item-menu admin-main__album-item-menu">
+                                <div class="admin-main__item-menu-part">
+                                    <button class="admin-main__item-menu-btn admin-main__item-menu-btn-link" id="admin-main__album-btn-link-5">
+                                        <p class="icon-web-link"></p>
+                                    </button>
+                                </div>
+                                <div class="admin-main__item-menu-part">
+                                    <button class="admin-main__item-menu-btn admin-main__item-menu-btn-edit" id="admin-main__album-btn-edit-5">
+                                        <p class="icon-edit"></p>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="admin-main__album-fotos-box">
+                                <button class="admin-main__btn-album admin-main__btn-album-5" id="admin-main__btn-album-5">
+                                    <div class="admin-main__fotos-mini">
+                                        <div class="admin-main__fotos-mini-item">
+                                            <img src="images/image-album-photo-mini-1_cut.png" alt="image-album-photo-mini">
+                                        </div>
+                                        <div class="admin-main__fotos-mini-item">
+                                            <img src="images/image-album-photo-mini-1_cut.png" alt="image-album-photo-mini">
+                                        </div>
+                                        <div class="admin-main__fotos-mini-item">
+                                            <img src="images/image-album-photo-mini-1_cut.png" alt="image-album-photo-mini">
+                                        </div>
+                                        <div class="admin-main__fotos-mini-item">
+                                            <img src="images/image-album-photo-mini-1_cut.png" alt="image-album-photo-mini">
+                                        </div>
+                                    </div>
+                                    <div class="admin-main__album-text-box">
+                                        <div class="admin-main__album-text-left">
+                                            <p class="admin-main__album-text">Альбом</p>
+                                            <p class="admin-main__album-number admin-main__album-text" id="admin-main__number-album-5">5</p>
+                                        </div>
+                                        <p class="admin-main__album-data admin-main__album-text" id="admin-main__data-album-5">01.05.2024</p>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Создать новый альбом -->
+                    <div class="admin-main__albums-box-item">
+                        <div class="admin-main__album-item">
+                            <div class="admin-main__album-fotos-box admin-main__album-new-box">
+                                <button class="admin-main__btn-album admin-main__btn-album-new" id="admin-main__btn-album-new">
+                                    <div class="admin-main__fotos-mini admin-main__album-new-image-box">
+                                        <img src="images/image-plus.svg" alt="image-album-photo-mini">
+                                    </div>
+                                    <div class="admin-main__album-text-box admin-main__album-text-new">
+                                        <p class="admin-main__album-text" id="admin-main__data-album-new">Добавить альбом</p>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="admin-main__albums-right">
+                <!-- Админка - Проекты - Альбомы - Модалка - Создать Новый альбом -->
+                <div class="admin-main__modal-new-album admin-main__modal-style hidden">
+                    <form name="admin-main__modal-new-album-form" action="#" method="post" id="form-admin-main__new-album">
+                        <div class="admin-main__new-album-input-box">
+                            <label for="name" class="admin-main__new-album-modal-label-name modal-label">Название</label><br>
+                            <input type="text" class="admin-main__new-album-modal-input-name modal-input admin-main__modal-input" id="admin-main__new-album-input-name" name="name" placeholder="|"><br>
+                        </div>
+                        <div class="admin-main__new-project-wrong-data hidden" id="admin-main__new-project-wrong-data-name">
+                            <p>Недопустимое название</p>
+                        </div>
+                        <div class="admin-main__new-album-input-box admin-main__new-album-input-data-box">
+                            <label for="date" class="admin-main__new-album-modal-label-name modal-label">Дата</label><br>
+                            <input type="date" class="admin-main__new-album-modal-input-name modal-input admin-main__modal-input" id="admin-main__new-album-input-date" name="date" placeholder=""><br>
+                        </div>
+                        <div class="admin-main__new-project-modal-submit-box">
+                            <button type="submit" id="admin-main__new-project-btn-submit" class="admin-main__new-project-btn-submit admin-main__btn-modal btn-dark-to-light">
+                                <p>Добавить альбом</p>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!-- Админка - Проекты - Альбомы - Модалка - Изменить альбом -->
+                <div class="admin-main__modal-edit-album admin-main__modal-style hidden">
+                    <form name="admin-main__modal-edit-album-form" action="#" method="post" id="form-admin-main__edit-album">
+                        <div class="admin-main__edit-album-input-box">
+                            <label for="name" class="admin-main__edit-album-modal-label-name modal-label">Название</label><br>
+                            <input type="text" class="admin-main__edit-album-modal-input-name modal-input admin-main__modal-input" id="admin-main__edit-album-input-name" name="name" placeholder="|"><br>
+                        </div>
+                        <div class="admin-main__edit-project-wrong-data hidden" id="admin-main__edit-project-wrong-data-name">
+                            <p>Недопустимое название</p>
+                        </div>
+                        <div class="admin-main__edit-album-input-box admin-main__edit-album-input-data-box">
+                            <label for="date" class="admin-main__edit-album-modal-label-name modal-label">Дата</label><br>
+                            <input type="date" class="admin-main__edit-album-modal-input-name modal-input admin-main__modal-input" id="admin-main__edit-album-input-date" name="date" placeholder=""><br>
+                        </div>
+                        <div class="admin-main__edit-project-modal-submit-box">
+                            <button type="submit" id="admin-main__edit-project-btn-submit" class="admin-main__edit-project-btn-submit admin-main__btn-modal btn-dark-to-light">
+                                <p>Сохранить альбом</p>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <hr class="admin-main__projects-hr admin-main__hr">
+        <!-- Админка - Вкладка проекты - Раздел - Фотографии -->
+        <div class="admin-main__photos">
+            <!-- Админка - Вкладка проекты - Раздел - Фотографии - Левая часть -->
+            <div class="admin-main__photos-left">
+                <form name="admin-main__photos-box-form" action="#" method="post" id="admin-main__photos-box-form">
+                    <div class="admin-main__photos-top">
+                        <div class="admin-main__photos-title-box">
+                            <h3 class="admin-main__h3">Проект - </h3>
+                            <h3 class="admin-main__photos-name-project admin-main__h3"> Барвиха январь 2024 /</h3>
+                            <h3 class="admin-main__photos-name-project admin-main__h3">  Альбом 1 - 01.01.2024</h3>
+                        </div>
+                        <div class="admin-main__photos-btn-close">
+                            <img src="images/image-modal-btn-close.svg" alt="image-modal-btn-close">
+                        </div>
+                    </div>
+                    <!-- Админка - Вкладка проекты - Раздел - Фотографии - Бокс всех фото -->
+                    <div class="admin-main__photos-box">
+                        <!-- Админка - Вкладка проекты - Раздел - Фотографии - Левая часть - Первая фотография -->
+                        <div class="admin-main__photos-box-item">
+                            <div class="admin-main__photos-item">
+                                <!-- Меню над фотографией -->
+                                <div class="admin-main__item-menu admin-main__photos-item-menu">
+                                    <div class="admin-main__item-menu-part">
+                                        <button type="button" class="admin-main__item-menu-btn admin-main__item-menu-btn-link" id="admin-main__album-btn-link-1">
+                                            <p class="icon-web-link"></p>
+                                        </button>
+                                    </div>
+                                    <div class="admin-main__item-menu-part">
+                                        <button type="button" class="admin-main__item-menu-btn admin-main__item-menu-btn-edit" id="admin-main__album-btn-del-1">
+                                            <!-- <img src="images/image-admin-del.svg" alt="image-admin-del"> -->
+                                            <p class="icon-del"></p>
+                                        </button>
+                                    </div>
+                                    <div class="admin-main__item-menu-part">
+                                        <button type="button" class="admin-main__item-menu-btn admin-main__item-menu-btn-edit" id="admin-main__album-btn-download-1">
+                                            <!-- <img src="images/image-admin-download.svg" alt="image-admin-download"> -->
+                                            <p class="icon-download"></p>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- Фотография и чекбоксы -->
+                                <div class="admin-main__photos-photo-box">
+                                    <button type="button" class="admin-main__btn-photo admin-main__btn-photo-1" id="admin-main__btn-photo-1">
+                                        <div class="admin-main__photo-item">
+                                            <img src="images/image-photo.png" alt="image-photo">
+                                        </div>
+                                        <div class="admin-main__checkbox-photos-select-photo-box">
+                                            <!-- <input type="checkbox" class="admin-main__checkbox-photos-select-photo" id="admin-main__checkbox-photos-select-photo" name="select-photo" value="select"> -->
+                                            <label class="admin-main__checkbox-photos-select-photo custom-checkbox">
+                                                <input type="checkbox" name="customCheckbox" class="custom-checkbox-input" id="custom-checkbox-input-photo-mini">
+                                                <span class="custom-checkbox-icon"></span>
+                                            </label>
+                                        </div>
+                                        <div class="admin-main__checkbox-photos-select-photo-box">
+                                            <!-- <input type="checkbox" class="admin-main__checkbox-photos-buy-photo" id="admin-main__checkbox-photos-buy-photo" name="buy-photo" value="buy"> -->
+                                            <label class="admin-main__checkbox-photos-buy-photo custom-checkbox-buy">
+                                                <input type="checkbox" name="customCheckbox" class="custom-checkbox-input-buy" id="custom-checkbox-input-photo-buy">
+                                                <span class="custom-checkbox-icon-buy"></span>
+                                            </label>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="admin-main__photo-number">
+                                    <p class="admin-main__photo-number-p" id="admin-main__photo-number-1">DCM8906</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="admin-main__photos-box-item">
+                            <div class="admin-main__photos-item">
+                                <!-- Меню над фотографией -->
+                                <div class="admin-main__item-menu admin-main__photos-item-menu">
+                                    <div class="admin-main__item-menu-part">
+                                        <button type="button" class="admin-main__item-menu-btn admin-main__item-menu-btn-link" id="admin-main__album-btn-link-1">
+                                            <p class="icon-web-link"></p>
+                                        </button>
+                                    </div>
+                                    <div class="admin-main__item-menu-part">
+                                        <button type="button" class="admin-main__item-menu-btn admin-main__item-menu-btn-edit" id="admin-main__album-btn-del-1">
+                                            <!-- <img src="images/image-admin-del.svg" alt="image-admin-del"> -->
+                                            <p class="icon-del"></p>
+                                        </button>
+                                    </div>
+                                    <div class="admin-main__item-menu-part">
+                                        <button type="button" class="admin-main__item-menu-btn admin-main__item-menu-btn-edit" id="admin-main__album-btn-download-1">
+                                            <!-- <img src="images/image-admin-download.svg" alt="image-admin-download"> -->
+                                            <p class="icon-download"></p>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- Фотография и чекбоксы -->
+                                <div class="admin-main__photos-photo-box">
+                                    <button type="button" class="admin-main__btn-photo admin-main__btn-photo-1" id="admin-main__btn-photo-1">
+                                        <div class="admin-main__photo-item">
+                                            <img src="images/image-photo.png" alt="image-photo">
+                                        </div>
+                                        <div class="admin-main__checkbox-photos-select-photo-box">
+                                            <!-- <input type="checkbox" class="admin-main__checkbox-photos-select-photo" id="admin-main__checkbox-photos-select-photo" name="select-photo" value="select"> -->
+                                            <label class="admin-main__checkbox-photos-select-photo custom-checkbox">
+                                                <input type="checkbox" name="customCheckbox" class="custom-checkbox-input" id="custom-checkbox-input-photo-mini">
+                                                <span class="custom-checkbox-icon"></span>
+                                            </label>
+                                        </div>
+                                        <div class="admin-main__checkbox-photos-select-photo-box">
+                                            <!-- <input type="checkbox" class="admin-main__checkbox-photos-buy-photo" id="admin-main__checkbox-photos-buy-photo" name="buy-photo" value="buy"> -->
+                                            <label class="admin-main__checkbox-photos-buy-photo custom-checkbox-buy">
+                                                <input type="checkbox" name="customCheckbox" class="custom-checkbox-input-buy" id="custom-checkbox-input-photo-buy">
+                                                <span class="custom-checkbox-icon-buy"></span>
+                                            </label>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="admin-main__photo-number">
+                                    <p class="admin-main__photo-number-p" id="admin-main__photo-number-1">DCM8906</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Добавить фото -->
+                        <div class="admin-main__photos-box-item admin-main__photos-box-item-new">
+                            <div class="admin-main__photos-item">
+                                <div class="admin-main__photos-photo-box admin-main__photos-photo-new-box">
+                                    <button type="button" class="admin-main__btn-photo admin-main__btn-photo-1 admin-main__btn-photo-new" id="admin-main__btn-photo-new">
+                                        <div class="admin-main__photo-item admin-main__photo-item-new">
+                                            <img src="images/image-plus.svg" alt="image-plus">
+                                        </div>
+                                        <div class="admin-main__photo-text-box admin-main__photo-text-new">
+                                            <p class="admin-main__photo-text" id="admin-main__data-photo-new">Добавить фото</p>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="admin-main__photos-btns-box">
+                        <div class="admin-main__photos-btns-text-box">
+                            <p class="admin-main__photos-btns-title">Выбрано фотографий: </p>
+                            <p class="admin-main__photos-btns-title-2" id="admin-main__photos-selected">12</p>
+                        </div>
+                        <button type="button" class="admin-main__btn-style-dark"><p>Выбрать все</p></button>
+                        <button type="button" class="admin-main__btn-style"><p>Отменить</p></button>
+                        <button type="button" class="admin-main__btn-style"><p>Скопировать ссылку</p></button>
+                        <button type="button" class="admin-main__btn-style"><p>Удалить</p></button>
+                        <button type="button" class="admin-main__btn-style"><p>Скачать</p></button>
+                    </div>
+                </form>
+                <!-- Фотографии - Модалка загрузить фото -->
+                <div class="admin-main__photos-modal-upload hidden">
+                    <div class="admin-main__modal-btn-close-box">
+                        <button class="general__modal-btn-close" id="general__btn-registration-close">
+                            <img src="images/image-modal-btn-close.svg" alt="image-modal-btn-close">
+                        </button>
+                    </div>
+                    <div class="admin-main__upload-box">
+                        <form id="admin-main__upload-form" action="your-upload-endpoint" method="post" enctype="multipart/form-data">
+                            <div class="admin-main__upload-form-drop-area" id="admin-main__upload-form-drop-area">
+                                <div class="admin-main__upload-photo">
+                                    <img src="images/image-plus.svg" alt="image-plus">
+                                </div>
+                                <div class="admin-main__upload-photo">
+                                    <p>Альбом пуст. перетащите фотографии</p>
+                                </div>
+                                <input type="file" id="fileElem" name="file" multiple>
+                            </div>
+                            <div class="admin-main__upload-form-btns-box">
+                                <button type="submit" class="admin-main__btn-upload-style" id="admin-main__btn-upload-from-pc"><p>Загрузить с компьютера</p></button>
+                                <div class="admin-main__upload-from-link-box">
+                                    <button type="submit" class="admin-main__btn-upload-style" id="admin-main__btn-upload-from-link"><p>Загрузить по url ссылке</p></button>
+                                    <hr class="admin-main__input-upload-from-link-hr">
+                                    <input type="url" id="admin-main__input-upload-from-link" name="input-upload-from-link" required>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Фотографии - Модалка просмотр фото -->
+                <div class="admin-main__photos-modal-viewing hidden">
+                    <div class="admin-main__modal-viewing-btn-close-box">
+                        <button class="general__modal-btn-close" id="general__btn-registration-close">
+                            <img src="images/image-modal-btn-close.svg" alt="image-modal-btn-close">
+                        </button>
+                    </div>
+                    <div class="admin-main__viewing-box">
+                        <div class="admin-main__viewing-photo-box">
+                            <img src="images/image-photo-1.jpg" alt="image-photo-viewing">
+                            <button class="btn-arrow btn-arrow-left" id="btn-admin-main__viewing-photo-left">
+                                <img src="images/image-btn-arrow.svg" alt="image-btn-arrow">
+                            </button>
+                            <button class="btn-arrow btn-arrow-right" id="btn-admin-main__viewing-photo-right">
+                                <img src="images/image-btn-arrow.svg" alt="image-btn-arrow">
+                            </button>
+                        </div>
+                        <div class="admin-main__viewing-footer">
+                            <form name="admin-main__viewing-photo-form" action="#" method="post" id="admin-main__viewing-photo-form">
+                                <div class="admin-main__viewing-btns-box">
+                                    <button type="button" class="admin-main__btn-style"><p>Скопировать ссылку</p></button>
+                                    <button type="button" class="admin-main__btn-style"><p>Удалить</p></button>
+                                    <button type="button" class="admin-main__btn-style-dark"><p>Скачать</p></button>
+                                    <!-- <input type="checkbox" id="admin-main__viewing-photo-form-checkbox" name="viewing-select-photo" value="select">
+                                    <label for="viewing-select-photo" class="modal-label">Выбрать</label> -->
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" name="customCheckbox" class="custom-checkbox-input" id="custom-checkbox-input-photo-viewing">
+                                        <span class="custom-checkbox-icon"></span>
+                                        <p class="modal-label">Выбрать</p>
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="admin-main__projects-hr admin-main__hr">
+        <!-- Блок Загрузить фотографии -->
+        <div class="admin-main__download">
+            <div class="admin-main__download-left">
+                <div class="admin-main__download-top">
+                    <div class="admin-main__download-title-box">
+                        <h3 class="admin-main__h3">Проект - </h3>
+                        <h3 class="admin-main__download-name-project admin-main__h3"> Барвиха январь 2024 /</h3>
+                        <h3 class="admin-main__download-name-project admin-main__h3">  Альбом 1 - 01.01.2024</h3>
+                        <h3 class="admin-main__download-name-project admin-main__h3 admin-main__h3-gray">(Пустой)</h3>
+                    </div>
+                    <div class="admin-main__download-btn-close">
+                        <img src="images/image-modal-btn-close.svg" alt="image-modal-btn-close">
+                    </div>
+                </div>
+                <!-- Блок с формой для загрузки фотографий -->
+                <div class="admin-main__upload-box">
+                    <form id="admin-main__upload-form" action="your-upload-endpoint" method="post" enctype="multipart/form-data">
+                        <div class="admin-main__upload-form-drop-area" id="admin-main__upload-form-drop-area">
+                            <div class="admin-main__upload-photo">
+                                <img src="images/image-plus.svg" alt="image-plus">
+                            </div>
+                            <div class="admin-main__upload-photo">
+                                <p>Альбом пуст. перетащите фотографии</p>
+                            </div>
+                            <input type="file" id="fileElem" name="file" multiple>
+                        </div>
+                        <div class="admin-main__upload-form-btns-box">
+                            <button type="submit" class="admin-main__btn-upload-style" id="admin-main__btn-upload-from-pc"><p>Загрузить с компьютера</p></button>
+                            <div class="admin-main__upload-from-link-box">
+                                <button type="submit" class="admin-main__btn-upload-style" id="admin-main__btn-upload-from-link"><p>Загрузить по url ссылке</p></button>
+                                <hr class="admin-main__input-upload-from-link-hr">
+                                <input type="url" id="admin-main__input-upload-from-link" name="input-upload-from-link" required>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div> 
+        <hr class="admin-main__projects-hr admin-main__hr">
+    </div>
+</body>
+</html>
+
