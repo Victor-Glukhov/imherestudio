@@ -2351,6 +2351,13 @@ a {
   font-size: 16px;
   line-height: 19px;
 }
+.p500-18-21 {
+  font-family: 'Golos-UI-Medium', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;  
+}
 .p500-20-20 {
     font-family: 'Golos-UI-Medium', sans-serif;
     font-weight: 500;
@@ -2525,6 +2532,20 @@ a {
 .basket__item-right-down {
     display: flex;
     justify-content: space-between;
+}
+.basket__item-cost {
+  color: #45565C;
+}
+.basket__item-btn-del-box {
+
+}
+.btn-style-box {
+  background-color: transparent;
+  border-style: none;
+}
+.basket__item-btn-del img {
+  height: 22px;
+  width: auto;
 }
 /* Моя корзина */
 /* Модальное окно - подтвердить удаление фото */
