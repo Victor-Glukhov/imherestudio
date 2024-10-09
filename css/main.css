@@ -2015,6 +2015,30 @@ a {
 .custom-checkbox-input-favourites:checked + .custom-checkbox-icon-favourites {
   background-image: url('../images/image-checkbox-favourites.png'); /* Замените на путь к вашей активной картинке */
 }
+/* Кастомный чекбокс - Скачать */
+.custom-checkbox-download {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.custom-checkbox-input-download {
+  display: none;
+}
+/* Стили для кастомной галочки */
+.custom-checkbox-icon-download {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url('../images/image-checkbox-uncheck.png'); /* Замените на путь к вашей неактивной картинке */
+  background-size: cover;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 25px;
+}
+/* Меняем изображение при активации чекбокса */
+.custom-checkbox-input-download:checked + .custom-checkbox-icon-download {
+  background-image: url('../images/image-checkbox-download.png'); /* Замените на путь к вашей активной картинке */
+}
 
 /* Файл get-photo.html */
 /* Экран - сделать селфи или фото */
@@ -2245,6 +2269,15 @@ a {
   border-radius: 10px;
 }
 .admin-main__checkbox-photos-favourites-photo {
+  position: absolute;
+    z-index: 2;
+    bottom: 10px;
+    right: 10px;
+    width: 22px;
+    height: 22px;
+    border-radius: 10px;
+}
+.admin-main__checkbox-photos-download-photo {
   position: absolute;
     z-index: 2;
     bottom: 10px;
@@ -3040,6 +3073,35 @@ a {
   height: 3px;
   background: linear-gradient(270.96deg, #EEFBFF -5.22%, rgba(255, 255, 255, 0.2) 15.36%, rgba(255, 255, 255, 0.2) 79.35%, #EEFBFF 106.06%);
 
+}
+/* Модальное окно - Ваши фотографии загружены на устройство. */
+.my-gallery__modal-confirm-del {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 360px;
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  transform: translateY(-70%);
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 40px;
+}
+.my-gallery__modal-btn-close-box {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 27px;
+}
+.my-gallery__modal-btn-close {
+  border-style: none;
+  background: transparent;
+  padding: 0;
+  width: 13px;
+}
+.modal-p {
+  text-align: center;
+  color: #45565C;
 }
 /* Пример */
 
