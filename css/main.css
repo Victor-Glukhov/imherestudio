@@ -2268,7 +2268,7 @@ a {
   left: 0;
   bottom: 0;
   width: 100%;
-  padding: 0px 15px;
+  padding: 0px;
   background-color: #EEFBFF;
   display: flex;
   flex-direction: column;
@@ -2291,8 +2291,7 @@ a {
   justify-content: space-between;
   margin-top: 25px;
   margin-bottom: 25px;
-  width: 100%;
-  max-width: 600px;
+  padding: 0px 15px;
 }
 .results-search__footer-left {
   display: flex;
