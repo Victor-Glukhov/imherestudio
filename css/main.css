@@ -2460,13 +2460,8 @@ a {
 }
 .basket__top-text-box {
     display: flex;
-    /* justify-content: center;
-    align-items: flex-end; */
     justify-content: flex-start;
     align-items: flex-end;
-    min-width: 360px;
-    width: 100%;
-    max-width: 560px;
     gap: 5px;
     padding-left: 15px;
     padding-right: 15px;
@@ -2493,9 +2488,6 @@ a {
     justify-content: flex-start;
     gap: 10px;
     padding: 20px 15px;
-    min-width: 360px;
-    width: 100%;
-    max-width: 560px;
 }
 .basket__item-foto-box {
     width: 130px;
@@ -2538,9 +2530,6 @@ a {
   align-items: center; */
   justify-content: flex-start;
   padding: 20px 15px 10px;
-  min-width: 360px;
-  width: 100%;
-  max-width: 560px;
 }
 .basket__payment-method-box {
     margin-top: 10px;
@@ -2648,8 +2637,6 @@ a {
   margin-top: 25px;
   margin-bottom: 25px;
   padding: 0px 15px;
-  width: 100%;
-  max-width: 560px;
   justify-content: space-between;
 }
 .basket__footer-left {
