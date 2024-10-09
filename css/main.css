@@ -2399,7 +2399,7 @@ a {
     justify-content: space-between;
     align-items: center;
 }
-.results-search-ne__item-date-text {
+.basket-one__item-date-text {
     padding-left: 5px;
 }
 .results-search-one__item-text-box .btn-close-box {
@@ -2716,6 +2716,130 @@ a {
 }
 .basket-empty__image-box img {
   opacity: 0.8;
+}
+/* Файл basket-one.html */
+.basket-one-general-box {
+  position: relative;
+}
+.basket-one__all-photos {
+  display: flex;
+  gap: 10px;
+  margin: 15px;
+}
+.basket-one__item-box {
+  margin-bottom: 110px;
+}
+.basket-one__item {
+  border-radius: 20px;
+  /* background-color: rgba(238, 251, 255, 0.7); */
+  background-image: linear-gradient(270.96deg, #EEFBFF -5.22%, rgba(255, 255, 255, 0.2) 15.36%, rgba(255, 255, 255, 0.2) 79.35%, #EEFBFF 106.06%);
+  background-origin: border-box;
+  box-shadow: inset 0 100vw rgba(238, 251, 255, 0.7);
+  border: 3px solid transparent;
+  display: inline-block;
+}
+.basket-one__item-btn-del-box {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+.basket-one__btn-del {
+  background-color: transparent;
+  border-style: none;
+  display: flex;
+  align-items: center;
+  height: 22px;
+  gap: 5px;
+}
+.basket-one__btn-del p {
+  color: #45565C;
+}
+.basket-one__btn-del img {
+  height: 22px;
+}
+.basket-one__item-text-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.basket-one__item-text-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.basket-one__item-text-box .btn-close-box {
+  margin: 5px;
+}
+.basket-one__checkbox-photos-favourites-photo {
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  right: 10px;
+  width: 22px;
+  height: 22px;
+  border-radius: 10px;
+}
+/* Файл basket-one.html */
+/* Модальное окно - подтвердить удаление фото */
+.basket-one__modal-confirm-del {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 360px;
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  transform: translateY(-70%);
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* Файл basket-one.html */
+/* Футер */
+.basket-one__footer {
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 0px;
+  background-color: #EEFBFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gradient-hr-container {
+  width: 100%;
+  margin: 0px;
+}
+.gradient-hr {
+  border: none;
+  height: 0;
+  border-top: 3px solid;
+  border-image-source: linear-gradient(270.96deg, #EEFBFF -5.22%, rgba(255, 255, 255, 0.2) 15.36%, rgba(255, 255, 255, 0.2) 79.35%, #EEFBFF 106.06%);
+  border-image-slice: 1;
+  margin: 0;
+}
+.basket-one__footer-down {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 0px 15px;
+}
+.basket-one__footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.basket-one__footer-left-item {
+  display: flex;
+  gap: 5px;
+}
+.basket-one__footer-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* Пример */
 

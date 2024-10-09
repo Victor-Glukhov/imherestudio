@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <title>Basket One</title>
+</head>
+<body>
+  <div class="main">
+    <div class="mobile-container">
+      <div class="basket-one-general-box">
+        <div class="btn-close-box">
+          <button class="btn-close" id="btn-close-results-search-one">
+            <img src="images/image-modal-btn-close.svg" alt="image-modal-btn-close">
+          </button>
+        </div>
+        <div class="basket-one__all-photos">
+          <!-- Блок с одной фотографией + кнопка снизу (удалить)-->
+          <div class="basket-one__item-box">
+            <div class="basket-one__item">
+              <!-- Название фото (дата и место) -->
+              <div class="basket-one__item-text-box">
+                <p class="basket-one__item-date-text p400-14-17">
+                  12.06.2022 Аквапарк Ривьера г.Казань
+                </p>
+                <div class="btn-close-box">
+                  <button class="btn-close" id="btn-close-basket-one-item">
+                    <img src="images/image-modal-btn-close.svg" alt="image-modal-btn-close">
+                  </button>
+                </div>
+              </div>
+              <!-- Бокс с фотографией -->
+              <div class="results-search-one__photo-box">
+                <!-- Фотография и чекбоксы -->
+                <div>
+                  <img src="images/image-photo-4.jpg" alt="image-photo-4">
+                </div>
+                <div>
+                  <label class="basket-one__checkbox-photos-favourites-photo custom-checkbox-favourites">
+                    <input type="checkbox" name="customCheckbox" class="custom-checkbox-input-favourites" id="custom-checkbox-basket-photo-favourites">
+                    <span class="custom-checkbox-icon-favourites"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="basket-one__item-btn-del-box">
+              <button class="basket-one__btn-del">
+                <p class="p400-16-19">Убрать из корзины</p>
+                <img src="images/image-garbage.svg" alt="image-garbage">
+              </button>
+            </div>
+          </div>
+          <!-- Блок с одной фотографией + кнопка снизу (удалить)-->
+          <div class="basket-one__item-box">
+            <div class="basket-one__item">
+              <!-- Название фото (дата и место) -->
+              <div class="basket-one__item-text-box">
+                <p class="basket-one__item-date-text p400-14-17">
+                  12.06.2022 Аквапарк Ривьера г.Казань
+                </p>
+                <div class="btn-close-box">
+                  <button class="btn-close" id="btn-close-basket-one-item">
+                    <img src="images/image-modal-btn-close.svg" alt="image-modal-btn-close">
+                  </button>
+                </div>
+              </div>
+              <!-- Бокс с фотографией -->
+              <div class="results-search-one__photo-box">
+                <!-- Фотография и чекбоксы -->
+                <div>
+                  <img src="images/image-photo-4.jpg" alt="image-photo-4">
+                </div>
+                <div>
+                  <label class="basket-one__checkbox-photos-favourites-photo custom-checkbox-favourites">
+                    <input type="checkbox" name="customCheckbox" class="custom-checkbox-input-favourites" id="custom-checkbox-basket-photo-favourites">
+                    <span class="custom-checkbox-icon-favourites"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="basket-one__item-btn-del-box">
+              <button class="basket-one__btn-del">
+                <p class="p400-16-19">Убрать из корзины</p>
+                <img src="images/image-garbage.svg" alt="image-garbage">
+              </button>
+            </div>
+          </div>
+          
+        </div>
+        <!-- Корзина по одной фото - Модальное окно (Оставить / Убрать) -->
+        <div class="basket-one__modal-confirm-del modal-style" id="basket__modal-confirm-del">
+          <div class="basket__modal-btn-close-box">
+            <button class="basket__modal-btn-close" id="basket__modal-btn-close">
+                <img src="images/image-modal-btn-close.svg" alt="image-modal-btn-close">
+            </button>
+          </div>
+          <p class="modal-p p400-16-19">Вы уверены что хотите убрать из корзины?</p>
+          <div class="basket__modal-controls-box">
+            <div>
+              <button class="btn-medium btn-dark-to-pink" id="basket__modal-btn-del-save"><p>Оставить</p></button>
+            </div>
+            <div>
+              <button class="btn-medium btn-dark-to-pink" id="basket__modal-btn-del-confirm"><p>Убрать</p></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Футер -->
+      <div class="basket-one__footer">
+        <div class="gradient-hr-container">
+          <hr class="gradient-hr">
+        </div>
+        <div class="basket-one__footer-down max-width-fixed">
+          <div class="basket-one__footer-left">
+            <div class="basket-one__footer-left-item">
+              <p class="p400-16-19 color-gray">Выбрано:</p>
+              <p class="p700-16-19 color-gray results-search__footer-select-fotos" id="results-search__footer-select-fotos">3</p>
+              <p class="p400-16-19 color-gray">фото</p>
+            </div>
+            <div class="basket-one__footer-left-item">
+              <p class="p400-16-19 color-gray">Сумма:</p>
+              <p class="p700-16-19 color-gray results-search__footer-select-fotos-cost" id="results-search__footer-select-fotos-cost">600</p>
+              <p class="p400-16-19 color-gray">руб.</p>
+            </div>
+          </div>
+          <div class="basket-one__footer-right">
+            <div>
+              <button class="btn-medium btn-dark-to-pink"><p>Оплатить</p></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
