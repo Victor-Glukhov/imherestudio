@@ -2587,7 +2587,7 @@ a {
   flex-direction: column;
   justify-content: center;
   min-width: 360px;
-  position: absolute;
+  position: fixed;
   z-index: 3;
   top: 35px;
   left: 50%;
@@ -2846,7 +2846,7 @@ a {
   flex-direction: column;
   justify-content: center;
   min-width: 360px;
-  position: absolute;
+  position: fixed;
   z-index: 3;
   top: 50%;
   transform: translateY(-70%);
@@ -3075,12 +3075,12 @@ a {
 
 }
 /* Модальное окно - Ваши фотографии загружены на устройство. */
-.my-gallery__modal-confirm-del {
+.my-gallery__modal-download-done {
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-width: 360px;
-  position: absolute;
+  position: fixed;
   z-index: 3;
   top: 50%;
   transform: translateY(-70%);
