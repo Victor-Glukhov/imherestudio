@@ -2465,7 +2465,6 @@ a {
     padding-left: 15px;
     padding-right: 15px;
 }
-
 .basket__top-h1 {
 
 }
@@ -2519,6 +2518,39 @@ a {
 .basket__item-right-down {
     display: flex;
     justify-content: space-between;
+}
+/* Моя корзина */
+/* Модальное окно - подтвердить удаление фото */
+.basket__modal-confirm-del {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 360px;
+  position: absolute;
+  z-index: 3;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.basket__modal-btn-close-box {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 27px;
+}
+.basket__modal-btn-close {
+  border-style: none;
+  background: transparent;
+  padding: 0;
+  width: 13px;
+}
+.modal-p {
+  text-align: center;
+  color: #45565C;
+}
+.basket__modal-controls-box {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-around;
 }
 /* Моя корзина */
 /* Выбор способа оплаты */
