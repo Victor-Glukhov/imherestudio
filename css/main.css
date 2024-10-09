@@ -2309,6 +2309,14 @@ a {
   justify-content: center;
   align-items: center;
 }
+/* Миксы */
+/* Микс - ширина мин и макс */
+.max-width-fixed {
+  min-width: 360px;
+  width: 100%;
+  max-width: 560px;
+}
+/* Миксы - шрифты */
 .p400-12-12 {
     font-family: 'Golos-UI-Regular', sans-serif;
     font-weight: 400;
@@ -2659,7 +2667,38 @@ a {
   justify-content: center;
   align-items: center;
 }
+/* Пустая корзина */
+/* Файл basket-empty.html */
 
+.basket-empty-container {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.basket-empty__box {
+  margin-top: 15px;
+  flex-grow: 1;
+}
+.basket-empty__text-box {
+  margin-top: 80px;
+}
+.basket-empty__h1 {
+  font-family: 'MV-WEEKEND', sans-serif;
+  font-weight: 400;
+  font-size: 45px; 
+  line-height: 36px;
+  color: #EEFBFF;
+  text-align: center;
+}
+.basket-empty__image-box {
+
+}
+.basket-empty__image-box img {
+  opacity: 0.8;
+}
 /* Пример */
 
 .hidden {
